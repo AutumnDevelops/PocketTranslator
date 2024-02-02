@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+        <link rel = "stylesheet" href = "styles/main.css">
+            <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section id = "input_area" class = "region">
+            <div id = "input_overhead" class = "overhead">
+                <div class = "icons">
+                    <a href = "index.html">
+                    <div class = "overhead_icons">
+                            <i class="fa-solid fa-house"></i>
+                    </div>
+                    </a>
+                    <div id  = "input_sound" class = "overhead_icons">
+                        <i class="fa-solid fa-headphones sound" id = "headphones_icon"></i>
+                    </div>
+                    <div id  = "input_copy" class = "overhead_icons">
+                        <i class="fa-solid fa-clipboard copy"></i>
+                    </div>
+                </div>
+                <select>
+                </select>
+            </div>
+                <textarea id = "input" placeholder="User Input"></textarea>
+        </section>
+
+
+
+            <div id = "switches">
+                <div id  = "switch_languages">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div id = "button">
+                    <h3>Translate</h3>
+                </div>
+            </div>
+
+
+        <section id = "translation_area"  class = "region">
+            <div id = "translation_overhead" class = "overhead" >
+                <div class = "icons">
+                    <div id = "translation_sound" class ="overhead_icons">
+                        <i class="fa-solid fa-headphones sound" id = "translation_sound"></i>
+                    </div>
+                    <div id = "translation_copy" class ="overhead_icons">
+                        <i class="fa-solid fa-clipboard copy" id = "translation_copy"></i>
+                    </div>
+                </div>
+                <select>
+                </select>
+            </div>
+            <textarea id = "translation" placeholder="Translation" readonly disabled></textarea>
+        </section>
+
+    </main>
+    <script src = "script/js.js"></script>
+</body>
+</html>

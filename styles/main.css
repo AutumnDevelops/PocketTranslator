@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-moz-placeholder {
+  color: rgba(249, 249, 249, 0.832);
+  opacity: 1;
+}
+
+*::placeholder {
+  color: rgba(249, 249, 249, 0.832);
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: rgba(249, 249, 249, 0.832);
+  opacity: 1;
+}
+
+*::-ms-input-placeholder {
+  color: rgba(249, 249, 249, 0.832);
+  opacity: 1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(52deg, rgb(99, 185, 187) 0%, rgb(58, 131, 98) 100%);
+  height: 100vh;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body a {
+  color: #fff;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 799px) {
+  body main {
+    flex-direction: column;
+  }
+}
+body main #home_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main #home_area h2 {
+  color: rgba(255, 255, 255, 0.524);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+  padding-bottom: 20px;
+}
+body main #home_area a {
+  color: rgba(255, 255, 255, 0.524);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px white;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  padding: 5px;
+  transition: 2.5s;
+}
+body main #home_area a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+body main .region {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10%;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+@media (max-width: 799px) {
+  body main .region {
+    width: 350px;
+    height: 270px;
+  }
+}
+body main .region .overhead {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.75px solid rgba(249, 249, 249, 0.832);
+}
+body main .region .overhead .icons {
+  display: flex;
+  height: 100%;
+}
+body main .region .overhead .icons .overhead_icons {
+  border-left: 1px solid rgba(249, 249, 249, 0.832);
+  padding: 20px;
+  color: rgba(249, 249, 249, 0.832);
+  font-size: 12.5px;
+}
+body main .region .overhead .icons .overhead_icons:hover {
+  transition: 0.25s ease-in-out;
+  box-shadow: inset 0 0 8px 2.5px rgba(249, 249, 249, 0.832);
+  cursor: pointer;
+}
+body main .region .overhead select {
+  background: inherit;
+  outline: none;
+  border: none;
+  color: rgba(249, 249, 249, 0.832);
+  cursor: pointer;
+}
+body main .region .overhead option {
+  background: rgba(191, 188, 188, 0.387);
+  color: rgb(99, 185, 187);
+  cursor: pointer;
+}
+body main .region textarea {
+  width: 100%;
+  padding: 15px;
+  height: 300px;
+  resize: none;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: rgba(249, 249, 249, 0.832);
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+@media (max-width: 799px) {
+  body main .region textarea {
+    padding: 7.5px;
+    font-size: 15px;
+  }
+}
+body main #switches {
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(249, 249, 249, 0.832);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10%;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  margin: 30px;
+}
+@media (min-width: 799px) {
+  body main #switches {
+    height: 300px;
+    width: 50px;
+    flex-direction: column;
+  }
+}
+body main #switches #switch_languages {
+  height: 100%;
+  width: 50%;
+  border-bottom: none;
+  border-right: 0.75px solid rgba(249, 249, 249, 0.832);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 799px) {
+  body main #switches #switch_languages {
+    height: 50%;
+    width: 100%;
+    border-bottom: 0.75px solid rgba(249, 249, 249, 0.832);
+    border-right: none;
+  }
+}
+body main #switches #switch_languages:hover {
+  transition: 0.25s ease-in-out;
+  box-shadow: inset 0 0 8px 2.5px rgba(249, 249, 249, 0.832);
+}
+body main #switches #button {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 799px) {
+  body main #switches #button {
+    width: 100%;
+    height: 50%;
+  }
+}
+body main #switches #button:hover {
+  transition: 0.25s ease-in-out;
+  box-shadow: inset 0 0 8px 2.5px rgba(249, 249, 249, 0.832);
+}
+@media (min-width: 799px) {
+  body main #switches #button h3 {
+    transform: rotate(-90deg);
+  }
+}/*# sourceMappingURL=main.css.map */
